@@ -11,23 +11,48 @@
     />
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>    
+  <body>
     <div class="container">
       <div class="row" id="title">
-        <div id="changebtn" class="col-md-6">
+        <div id="changebtn" class="col-md-2">
+          <select id="prevMon" class="form-control">
+            <option selected>Prev...</option>
+            <option value="x">X</option>
+            <option value="2x">2X</option>
+            <option value="4x">4X</option>
+            <option value="6x">6X</option>
+          </select>
+          <!-- <button id="prevTwoMonth" type="button" class="btn btn-outline-dark">
+            2&lt;
+          </button>
+          
             <button id="prevMonth" type="button" class="btn btn-outline-dark">
               &lt;
             </button>            
             <button id="nextMonth" type="button" class="btn btn-outline-dark">
               &gt;
             </button>
-            <div id="curMonth">           
-            </div>
+            <button id="nextTwoMonth" type="button" class="btn btn-outline-dark">
+              2&gt;
+            </button> -->
         </div>
-        <div class="col-md-4">
+        <div id="changebtn" class="col-md-2">
+          <select id="nextMon" class="form-control">
+            <option selected>Next...</option>
+            <option value="x">X</option>
+            <option value="2x">2X</option>
+            <option value="4x">4X</option>
+            <option value="6x">6X</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <div id="curMonth"></div>
+        </div>
+        
+        <!-- <div class="col-md-4">
           <h2>My Calendar</h2>
-        </div>
-       
+        </div> -->
+
         <div class="col-md-2">
           <select id="yearSelect" class="form-control">
             <!-- Populate the year select with options for years 1900 to 2050 -->
